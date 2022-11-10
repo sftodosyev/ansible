@@ -1,0 +1,14 @@
+ansible_control
+ansible_node_1
+ansible_node_2
+
+[lamp]
+ansible_node_1
+ansible_node_2
+
+[file]
+ansible_node_2
+
+[nodes:children]
+lamp
+file
